@@ -75,7 +75,7 @@ TO BE CONTINOUS .......
 
 - Mô tả bằng lời các nội dung cần quản lý.
 //////////////////////////////////
-	-- quản lý thông tin học sinh : que quan, dan toc, tôn giao, hoc luc, khoi, lop, hocsinh
+	-- quản lý thông tin học sinh : dan toc, tôn giao, hoc luc, khoi, lop, hocsinh
 	-- quản lý kết quả học sinh: nam học, ket qua, hoc ky, mon hoc, kqcanam, kqmonhoc, kqhocky, kqmonhoc, loaidiem
 	-- quản lý các hành vi của học sinh: hanh kiem, qui dinh
 
