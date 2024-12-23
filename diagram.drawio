@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="qn-IENBSOCaLbvW9I9Vj" name="ERD">
-        <mxGraphModel dx="910" dy="475" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="570" dy="352" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -870,16 +870,16 @@
                 <mxCell id="54" value="MaHocLuc" style="ellipse;whiteSpace=wrap;html=1;fontStyle=7" parent="1" vertex="1">
                     <mxGeometry x="10" y="200" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="55" value="MaHocLuc" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="55" value="DiemCanDuoi" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="10" y="280" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="56" value="DiemKhongChe" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="10" y="360" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="58" value="MaHocLuc" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="58" value="DiemCanTren" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="200" y="280" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="63" value="MaHocLuc" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="63" value="TenHocLuc" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="200" y="200" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="66" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="53" target="63" edge="1">
