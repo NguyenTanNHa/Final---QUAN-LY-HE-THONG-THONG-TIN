@@ -64,7 +64,87 @@ TO BE CONTINOUS .......
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+LOAINGUOIDUNG
+DANTOC
+TONGIAO
+NAMHOC
+HOCKY
+KHOILOP
+MONHOC
+HOCLUC
+HANHKIEM
+KETQUA
+NGHENGHIEP
+LOAIDIEM
+QUIDINH
+NGUOIDUNG
+	- MALOAI (LOAINGUOIDUNG) -------------- Hoàng
+
+GIAOVIEN
+	- MAMONHOC(MONHOC) -------------- Hoàng
+HOCSINH
+	- MADANTOC(DANTOC) -------------- Hoàng
+	- MATONGIAO(TONGIAO) -------------- Hoàng
+	- MANGHE(NGHENGHIEP) -------------- Hoàng
+
+PHANLOP
+	- MAHOCSINH (HOCSINH) -------------- Hoàng
+	- MANAMHOC (NAMHOC)  -------------- Nhã
+	- MAKHOILOP (KHOILOP)  -------------- Nhã
+	- MALOP (LOP)  -------------- Nhã
+LOP
+	- MAKHOILOP (KHOI) -------------- Nhã
+	- MANAMHOC (NAMHOC)  -------------- Nhã
+	- MAGIAOVIEN (GIAOVIEN)  -------------- Nhã
+PHANCONG
+	- MANAMHOC (NAMHOC) -------------- Thịnh
+	- MALOP (LOP) -------------- Thịnh
+	- MAMONHOC (MONHOC) -------------- Thịnh
+	- MAGIAOVIEN (GIAOVIEN) -------------- Thịnh
+DIEM
+	- MAHOCSINH (HOCSINH) -------------- Thịnh
+	- MAMONHOC (MONHOC) -------------- Thịnh
+	- MAHOCKY (HOCKY) -------------- Vỹ
+	- MANAMHOC (NAMHOC) -------------- Vỹ
+	- MALOP (LOP) -------------- Vỹ
+	- MALOAI (LOAIDIEM) -------------- Vỹ
+KQ_HOCSINH_MONHOC
+	- MAHOCSINH (HOCSINH) -------------- Vỹ
+	- MALOP (LOP) -------------- Vỹ
+	- MANAMHOC (NAMHOC) -------------- Vỹ
+	- MAMONHOC (MONHOC) -------------- Vỹ
+	- MAHOCKY (HOCKY) -------------- Vỹ
+KQ_HOCSINH_CANAM
+	- MAHOCSINH (HOCSINH) -------------- Vỹ
+	- MALOP (LOP) -------------- Vỹ
+	- MANAMHOC (NAMHOC) -------------- Vỹ
+	- MAHOCLUC (HOCLUC) -------------- Vỹ
+	- MAHANHKIEM (HANHKIEM) -------------- Vỹ
+	- MAKETQUA (KETQUA) -------------- Vỹ
+KQ_LOPHOC_MONHOC
+	- MALOP (LOP) -------------- Vỹ
+	- MANAMHOC (NAMHOC) -------------- Vỹ
+	- MAMONHOC (MONHOC) -------------- Vỹ
+	- MAHOCKY (HOCKY) -------------- Vỹ
+KQ_LOPHOC_HOCKY
+	- MALOP (LOP) -------------- Vỹ
+	- MANAMHOC (NAMHOC) -------------- Vỹ
+	- MAHOCKY (HOCKY) -------------- Vỹ
+
+
+
+
+
+
 BƯỚC 2: 
+	Thịnh
+			viết mô tả: phân tích mối quan hệ 1 - n hay  1 - 1 
+				PHANCONG 	- MANAMHOC
+							- MALOP
+							- MAMONHOC
+							- GIAOVIEN
+				DIEM		- MAMONHOC
+							- MAHOCSINH
 	Hoàng 
 		
 		viết mô tả: phân tích mối quan hệ 1 - n hay  1 - 1 
@@ -72,7 +152,7 @@ BƯỚC 2:
 						- NGHE
 				 		- TON GIAO
 			GIAOVIEN 	- MONHOC 
-			NGUOIDUNG 	- LAOINGUOIDUNG
+			NGUOIDUNG 	- LOAINGUOIDUNG
 			PHAN LOP 	- MAHOCSINH
 	Nhã
 		viết mô tả: phân tích mối quan hệ 1 - n hay  1 - 1 
@@ -82,15 +162,16 @@ BƯỚC 2:
 			PHANLOP 	- MANAMHOC 
 					 	- MAKHOILOP
 						- MALOP
-	Thịnh
-		viết mô tả: phân tích mối quan hệ 1 - n hay  1 - 1 
-			PHANCONG 	- MANAMHOC
-						- MALOP
-						- MAMONHOC
-						- GIAOVIEN
-			LOAIDIEM	- HOCSINH
-						- MONHOC
-		
+	
+	Vỹ 
+		Viết mô tả: phân tích mối quan hệ 1 - n hay  1 - 1 
+			DIEM 		- MAHOCSINH (HOCSINH)
+						- MAMONHOC (MONHOC)
+						- MAHOCKY (HOCKY)
+						- MANAMHOC (NAMHOC)
+						- MALOP (LOP)
+						- MALOAI (LOAIDIEM )
+
 	
 
 TO BE CONTINOUS .......
