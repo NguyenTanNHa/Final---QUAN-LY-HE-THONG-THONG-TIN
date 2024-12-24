@@ -62,6 +62,40 @@ BƯỚC 1:
 
 TO BE CONTINOUS .......
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+BƯỚC 2: 
+	Hoàng 
+		
+		viết mô tả: phân tích mối quan hệ 1 - n hay  1 - 1 
+			HOCSINH 	- DAN TOC 
+						- NGHE
+				 		- TON GIAO
+			GIAOVIEN 	- MONHOC 
+			NGUOIDUNG 	- LAOINGUOIDUNG
+			PHAN LOP 	- MAHOCSINH
+	Nhã
+		viết mô tả: phân tích mối quan hệ 1 - n hay  1 - 1 
+			LOP		 	- MAKHOI 
+						- MANAMHOC
+				 		- MAGIAOVIEN
+			PHANLOP 	- MANAMHOC 
+					 	- MAKHOILOP
+						- MALOP
+	Thịnh
+		viết mô tả: phân tích mối quan hệ 1 - n hay  1 - 1 
+			PHANCONG 	- MANAMHOC
+						- MALOP
+						- MAMONHOC
+						- GIAOVIEN
+			LOAIDIEM	- HOCSINH
+						- MONHOC
+		
+	
+
+TO BE CONTINOUS .......
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
 	
 	
 
