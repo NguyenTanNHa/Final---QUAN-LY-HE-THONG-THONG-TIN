@@ -1585,7 +1585,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="IN_RjIasDZHKLnIJRxau" name="CD">
-        <mxGraphModel dx="685" dy="1458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2240" dy="1969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -1642,6 +1642,42 @@
                 </mxCell>
                 <mxCell id="YsrBMBfQ22DPU_aOEoks-6" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;LOAIDIEM&lt;br&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;span class=&quot;hljs-symbol&quot;&gt;MaLoai:&lt;/span&gt; &lt;span class=&quot;hljs-type&quot;&gt;String&lt;/span&gt;&lt;br/&gt;&lt;span class=&quot;hljs-symbol&quot;&gt;TenLoai:&lt;/span&gt; &lt;span class=&quot;hljs-type&quot;&gt;String&lt;/span&gt;&lt;br/&gt;&lt;span class=&quot;hljs-symbol&quot;&gt;HeSo:&lt;/span&gt; int&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
                     <mxGeometry x="1360" y="690" width="160" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="Dag2aKsu4H8GSiBuLY4D-1" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;NGUOIDUNG&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="322.5" y="940" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Dag2aKsu4H8GSiBuLY4D-2" value="TenNguoiDung string&lt;div&gt;TenDangNhap&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;string&lt;/span&gt;&lt;/div&gt;&lt;div&gt;MaLoai&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;string&lt;/span&gt;&lt;/div&gt;&lt;div&gt;MaNguoiDung&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;string&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="1020" width="125" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Dag2aKsu4H8GSiBuLY4D-3" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;GIAOVIEN&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="477.5" y="940" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Dag2aKsu4H8GSiBuLY4D-4" value="MaMonHoc&lt;div&gt;DienThoai&lt;/div&gt;&lt;div&gt;DiaChi&lt;/div&gt;&lt;div&gt;MaGiaoVien&lt;/div&gt;&lt;div&gt;TenGiaoVien&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="477.5" y="1020" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Dag2aKsu4H8GSiBuLY4D-5" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;TONGIAO&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="607.5" y="940" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Dag2aKsu4H8GSiBuLY4D-6" value="TenTonGiao string&lt;div&gt;MaTonGiao&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;string&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="587.5" y="990" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Dag2aKsu4H8GSiBuLY4D-7" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;PHANCONG&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="747.5" y="940" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Dag2aKsu4H8GSiBuLY4D-8" value="STT int&lt;div&gt;MaMonHoc string&lt;/div&gt;&lt;div&gt;MaNamHoc string&lt;/div&gt;&lt;div&gt;MaLop string&lt;/div&gt;&lt;div&gt;MaGiaoVien string&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="722.5" y="1000" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Dag2aKsu4H8GSiBuLY4D-9" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;LOAINGUOIDUNG&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="897.5" y="940" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Dag2aKsu4H8GSiBuLY4D-10" value="MaLoai string&lt;div&gt;TenLoai string&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="887.5" y="980" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Dag2aKsu4H8GSiBuLY4D-11" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;PHANLOP&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1057.5" y="940" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Dag2aKsu4H8GSiBuLY4D-12" value="MaNamHoc string&lt;div&gt;MaKhoiLop&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;string&lt;/span&gt;&lt;/div&gt;&lt;div&gt;MaLop&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;string&lt;/span&gt;&lt;/div&gt;&lt;div&gt;MaHocSinh&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;string&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1032.5" y="990" width="110" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
