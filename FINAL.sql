@@ -66,7 +66,6 @@ TO BE CONTINOUS .......
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 BƯỚC 2: 
 
-LOAINGUOIDUNG
 DANTOC
 TONGIAO
 NAMHOC
@@ -79,6 +78,7 @@ KETQUA
 NGHENGHIEP
 LOAIDIEM
 QUIDINH
+LOAINGUOIDUNG
 NGUOIDUNG
 	- MALOAI (LOAINGUOIDUNG) -------------- Hoàng
 
