@@ -28,7 +28,11 @@ CREATE TABLE NGUOIDUNG
 	MatKhau VARCHAR(64) NOT NULL,
 	CONSTRAINT FK_NGUOIDUNG_LOAINGUOIDUNG FOREIGN KEY(MaLoai) REFERENCES LOAINGUOIDUNG(MaLoai)
 )
-
+INSERT INTO NGUOIDUNG (MaNguoiDung, MaLoai, TenDangNhap, TenNguoiDung, MatKhau) VALUES
+	('ND123', 'LND002', 'NDSYSTEM1', N'Nguyễn Triệu Vỹ', '0837441290'),
+	('ND124', 'LND002', 'NDSYSTEM1', N'Nguyễn Tấn Nhã', '0876432152'),
+	('ND125', 'LND002', 'NDSYSTEM1', N'Nguyễn Minh Hoàng', '0736266122'),
+	('ND126', 'LND002', 'NDSYSTEM1', N'Nguyễn Văn Thịnh', '0873287121');
 --===================================================================================================================================================
 
 CREATE TABLE DANTOC
@@ -428,6 +432,19 @@ CREATE TABLE DIEM
 	CONSTRAINT CK_DIEM CHECK(Diem BETWEEN 0 AND 10)
 )
 
+INSERT INTO DIEM (MaHocSinh, MaMonHoc, MaHocKy, MaNamHoc, MaLop, MaLoai, Diem) VALUES 
+('HS0001', 'MH0001', 'HK1', 'NH2021', 'LOP1212021', 'LD0001', 9 ),
+('HS0002', 'MH0002', 'HK1', 'NH2021', 'LOP1212021', 'LD0002', 8 ),
+('HS0003', 'MH0003', 'HK1', 'NH2021', 'LOP1212021', 'LD0003', 7 ),
+('HS0004', 'MH0004', 'HK1', 'NH2021', 'LOP1212021', 'LD0004', 6 ),
+('HS0005', 'MH0005', 'HK1', 'NH2021', 'LOP1212021', 'LD0004', 5 ),
+('HS0006', 'MH0006', 'HK1', 'NH2021', 'LOP1212021', 'LD0003', 4 ),
+('HS0001', 'MH0001', 'HK2', 'NH2021', 'LOP1212021', 'LD0002', 9 ),
+('HS0002', 'MH0002', 'HK2', 'NH2021', 'LOP1212021', 'LD0001', 8 ),
+('HS0003', 'MH0003', 'HK2', 'NH2021', 'LOP1212021', 'LD0004', 7 ),
+('HS0004', 'MH0004', 'HK2', 'NH2021', 'LOP1212021', 'LD0003', 6 ),
+('HS0005', 'MH0005', 'HK2', 'NH2021', 'LOP1212021', 'LD0002', 5 ),
+('HS0006', 'MH0006', 'HK2', 'NH2021', 'LOP1212021', 'LD0001', 4 )
 --===================================================================================================================================================
 
 CREATE TABLE KQ_HOCSINH_MONHOC
@@ -457,6 +474,15 @@ CREATE TABLE KQ_HOCSINH_MONHOC
 	CONSTRAINT CK_DiemTBHK CHECK(DiemTBHK BETWEEN 0 AND 10),
 )
 
+
+INSERT INTO KQ_HOCSINH_MONHOC (MaHocSinh,  MaLop, MaNamHoc, MaMonHoc, MaHocKy, DiemMiengTB, Diem15PhutTB, Diem45PhutTB, DiemThi, DiemTBHK) VALUES 
+('HS0001', 'LOP1212021','NH2021', 'MH0001', 'HK1', 7,8,9,7,10),
+('HS0001', 'LOP1212021','NH2021', 'MH0002', 'HK1', 6,8,1,7,4),
+('HS0001', 'LOP1212021','NH2021', 'MH0003', 'HK1', 7,8,2,7,3),
+('HS0001', 'LOP1212021','NH2021', 'MH0004', 'HK1', 9,8,9,7,2),
+('HS0001', 'LOP1212021','NH2021', 'MH0001', 'HK2', 7,8,9,7,4),
+('HS0001', 'LOP1212021','NH2021', 'MH0002', 'HK2', 7,8,9,7,9),
+('HS0001', 'LOP1212021','NH2021', 'MH0003', 'HK2', 7,8,9,7,7)
 --===================================================================================================================================================
 
 CREATE TABLE KQ_HOCSINH_CANAM
@@ -484,6 +510,14 @@ CREATE TABLE KQ_HOCSINH_CANAM
 	CONSTRAINT CK_DiemTBCN CHECK(DiemTBCN BETWEEN 0 AND 10),
 )
 
+INSERT INTO KQ_HOCSINH_CANAM (MaHocSinh,  MaLop, MaNamHoc, MaHocLuc, MaHanhKiem, MaKetQua, DiemTBHK1, DiemTBHK2, DiemTBCN) VALUES 
+('HS0001', 'LOP1212021','NH2021', 'HL0001', 'HK0001', 'KQ001',9,7,10),
+('HS0002', 'LOP1212021','NH2021', 'HL0002', 'HK0001', 'KQ0001',8,7,8),
+('HS0003', 'LOP1212021','NH2021', 'HL0002', 'HK0001', 'KQ0001',7,7,7),
+('HS0004', 'LOP1212021','NH2021', 'HL0002', 'HK0001', 'KQ0001',9,8,7),
+('HS0005', 'LOP1212021','NH2021', 'HL0002', 'HK0002', 'KQ0001',9,7,7),
+('HS0006', 'LOP1212021','NH2021', 'HL0001', 'HK0002', 'KQ0001',9,7,9),
+('HS0007', 'LOP1212021','NH2021', 'HL0002', 'HK0002', 'KQ0001',9,7,7)
 --===================================================================================================================================================
 
 CREATE TABLE KQ_LOPHOC_MONHOC
@@ -501,7 +535,13 @@ CREATE TABLE KQ_LOPHOC_MONHOC
 	CONSTRAINT FK_KQLHMH_MONHOC FOREIGN KEY(MaMonHoc) REFERENCES MONHOC(MaMonHoc),
 	CONSTRAINT FK_KQLHMH_HOCKY FOREIGN KEY(MaHocKy) REFERENCES HOCKY(MaHocKy),
 )
-
+INSERT INTO KQ_LOPHOC_MONHOC ( MaLop, MaNamHoc, MaMonHoc, MaHocKy, SoLuongDat, TiLe) VALUES
+('LOP1212021','NH2021','MH0001','HK1', 3,15),
+('LOP1212021','NH2021','MH0001','HK2', 2,20),
+('LOP1012021','NH2021','MH0001','HK1', 3,15),
+('LOP1012021','NH2021','MH0001','HK2', 2,20),
+('LOP1031920','NH2021','MH0001','HK1', 1,10),
+('LOP1031920','NH2021','MH0001','HK2', 2,15)
 --===================================================================================================================================================
 
 CREATE TABLE KQ_LOPHOC_HOCKY
@@ -517,7 +557,13 @@ CREATE TABLE KQ_LOPHOC_HOCKY
 	CONSTRAINT FK_KQLHHK_NAMHOC FOREIGN KEY(MaNamHoc) REFERENCES NAMHOC(MaNamHoc),
 	CONSTRAINT FK_KQLHHK_HOCKY FOREIGN KEY(MaHocKy) REFERENCES HOCKY(MaHocKy),
 )
-
+INSERT INTO KQ_LOPHOC_HOCKY ( MaLop, MaNamHoc, MaHocKy, SoLuongDat, TiLe) VALUES
+('LOP1212021','NH2021','HK1', 3,15),
+('LOP1212021','NH2021','HK2', 2,20),
+('LOP1012021','NH2021','HK1', 3,15),
+('LOP1012021','NH2021','HK2', 2,20),
+('LOP1031920','NH2021','HK1', 1,10),
+('LOP1031920','NH2021','HK2', 2,15)
 --===================================================================================================================================================
 
 CREATE TABLE QUYDINH
