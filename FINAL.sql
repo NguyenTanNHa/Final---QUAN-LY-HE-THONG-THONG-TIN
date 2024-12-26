@@ -274,8 +274,8 @@ TABLE CHƯA CÓ DATA ->
 	NGƯỜI DÙNG ---------------- ok
 	HỌC SINH MÔN HỌC ---------------- ok
 	HỌC SINH CẢ NĂM ---------------- ok
-	LỚP HỌC HỌC KỲ 
-	LỚP HỌC MÔN HỌC
+	LỚP HỌC HỌC KỲ ---------------- ok
+	LỚP HỌC MÔN HỌC---------------- ok
 	DIEM  ---------------- ok
 	
 	
