@@ -62,12 +62,171 @@ BƯỚC 1:
 
 TO BE CONTINOUS .......
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+BƯỚC 2: 
+
+DANTOC
+TONGIAO
+NAMHOC
+HOCKY
+KHOILOP
+MONHOC
+HOCLUC
+HANHKIEM
+KETQUA
+NGHENGHIEP
+LOAIDIEM
+QUIDINH
+LOAINGUOIDUNG
+NGUOIDUNG
+	- MALOAI (LOAINGUOIDUNG) -------------- Hoàng
+
+GIAOVIEN
+	- MAMONHOC(MONHOC) -------------- Hoàng
+HOCSINH
+	- MADANTOC(DANTOC) -------------- Hoàng
+	- MATONGIAO(TONGIAO) -------------- Hoàng
+	- MANGHE(NGHENGHIEP) -------------- Hoàng
+
+PHANLOP
+	- MAHOCSINH (HOCSINH) -------------- Hoàng
+	- MANAMHOC (NAMHOC)  -------------- Nhã
+	- MAKHOILOP (KHOILOP)  -------------- Nhã
+	- MALOP (LOP)  -------------- Nhã
+LOP
+	- MAKHOILOP (KHOI) -------------- Nhã
+	- MANAMHOC (NAMHOC)  -------------- Nhã
+	- MAGIAOVIEN (GIAOVIEN)  -------------- Nhã
+PHANCONG
+	- MANAMHOC (NAMHOC) -------------- Thịnh
+	- MALOP (LOP) -------------- Thịnh
+	- MAMONHOC (MONHOC) -------------- Thịnh
+	- MAGIAOVIEN (GIAOVIEN) -------------- Thịnh
+DIEM
+	- MAHOCSINH (HOCSINH) -------------- Thịnh
+	- MAMONHOC (MONHOC) -------------- Thịnh
+	- MAHOCKY (HOCKY) -------------- Vỹ
+	- MANAMHOC (NAMHOC) -------------- Vỹ
+	- MALOP (LOP) -------------- Vỹ
+	- MALOAI (LOAIDIEM) -------------- Vỹ
+KQ_HOCSINH_MONHOC
+	- MAHOCSINH (HOCSINH) -------------- Vỹ
+	- MALOP (LOP) -------------- Vỹ
+	- MANAMHOC (NAMHOC) -------------- Vỹ
+	- MAMONHOC (MONHOC) -------------- Vỹ
+	- MAHOCKY (HOCKY) -------------- Vỹ
+KQ_HOCSINH_CANAM
+	- MAHOCSINH (HOCSINH) -------------- Vỹ
+	- MALOP (LOP) -------------- Vỹ
+	- MANAMHOC (NAMHOC) -------------- Vỹ
+	- MAHOCLUC (HOCLUC) -------------- Vỹ
+	- MAHANHKIEM (HANHKIEM) -------------- Vỹ
+	- MAKETQUA (KETQUA) -------------- Vỹ
+KQ_LOPHOC_MONHOC
+	- MALOP (LOP) -------------- Vỹ
+	- MANAMHOC (NAMHOC) -------------- Vỹ
+	- MAMONHOC (MONHOC) -------------- Vỹ
+	- MAHOCKY (HOCKY) -------------- Vỹ
+KQ_LOPHOC_HOCKY
+	- MALOP (LOP) -------------- Vỹ
+	- MANAMHOC (NAMHOC) -------------- Vỹ
+	- MAHOCKY (HOCKY) -------------- Vỹ
+
+
+
+
+
+
+	Thịnh
+			viết mô tả: phân tích mối quan hệ 1 - n hay  1 - 1 
+				PHANCONG 	- MANAMHOC
+							- MALOP
+							- MAMONHOC
+							- GIAOVIEN
+				DIEM		- MAMONHOC
+							- MAHOCSINH
+	Hoàng 
+		
+		viết mô tả: phân tích mối quan hệ 1 - n hay  1 - 1 
+			HOCSINH 	- DAN TOC 
+						- NGHE
+				 		- TON GIAO
+			GIAOVIEN 	- MONHOC 
+			NGUOIDUNG 	- LOAINGUOIDUNG
+			PHAN LOP 	- MAHOCSINH
+	Nhã
+		viết mô tả: phân tích mối quan hệ 1 - n hay  1 - 1 
+			LOP		 	- MAKHOI 
+						- MANAMHOC
+				 		- MAGIAOVIEN
+			PHANLOP 	- MANAMHOC 
+					 	- MAKHOILOP
+						- MALOP
+	
+	Vỹ 
+		Viết mô tả: phân tích mối quan hệ 1 - n hay  1 - 1 
+			DIEM 		- MAHOCSINH (HOCSINH)
+						- MAMONHOC (MONHOC)
+						- MAHOCKY (HOCKY)
+						- MANAMHOC (NAMHOC)
+						- MALOP (LOP)
+						- MALOAI (LOAIDIEM )
+
+	
+
+TO BE CONTINOUS .......
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	
+	
+BƯỚC 3:
+	xác định kiểu dữ liệu và loại trường bắt buộc
+		Định dạng bảng 	TÊN CỘT   |    KIỂU DỮ LIỆU   |  BẮT BUỘT ( YES / NO )
+
+	Thịnh
+			nguoidung, 2
+			loainguodung, 5
+			giaovien, 5
+			phancong, 5
+			phanlop, 4
+			tôn giao, 2
+
+	Hoàng 
+		
+			nghenghiep, 2
+			khoi, 2
+			lop,  6
+			hanh kiem, 2
+			diem, 8
+			loaidiem, 3
+	Nhã
+			hoc luc, 5
+			nam học, 2
+			ket qua, 2
+			hoc ky, 3
+			mon hoc, 4
+			qui dinh,5
+
+	
+	Vỹ 
+			kqcanam, 9
+			kqhocky, 5
+			kqhocsinhmonhoc, 10
+			kqhocsinhlophoc, 6
+			dan toc, 2
+			hocsinh, 12
 
 
 
+	
 
+TO BE CONTINOUS .......
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
 
 
 
@@ -91,12 +250,62 @@ TO BE CONTINOUS .......
 //////////////////////////////////
 - Mô tả dữ liệu nhập thử cho tất cả các bảng.
 //////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+BƯỚC 4: 
 
+	Thịnh
+			
+	Hoàng 
+		
+	Nhã
+
+	
+	Vỹ 
+		
+
+	
+
+TO BE CONTINOUS .......
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+TABLE CHƯA CÓ DATA -> 
+	NGƯỜI DÙNG ---------------- ok
+	HỌC SINH MÔN HỌC ---------------- ok
+	HỌC SINH CẢ NĂM ---------------- ok
+	LỚP HỌC HỌC KỲ 
+	LỚP HỌC MÔN HỌC
+	DIEM  ---------------- ok
+	
 	
 
 Task 2: (3.0 point)
 Identify 03 integrity constraints and write source code to implement the business related trigger.
 Xác định 03 ràng buộc toàn vẹn và viết mã nguồn cài đặt trigger liên quan nghiệp vụ.
+	
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+BƯỚC 5: xác định ít nhất 6 ràng buộc toàn vẹn và cài đặt trigger
+	Thịnh
+			
+	Hoàng 
+		
+	Nhã
+
+	
+	Vỹ 
+		
+
+	
+
+TO BE CONTINOUS .......
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+
+
+
 
 Task 3: (2.0 point)
 Create 02 stores combined using cursor to browse data to serve any function of the store..
