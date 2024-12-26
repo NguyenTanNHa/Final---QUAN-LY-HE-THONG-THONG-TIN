@@ -271,12 +271,12 @@ TO BE CONTINOUS .......
 	
 	
 TABLE CHƯA CÓ DATA -> 
-	NGƯỜI DÙNG
-	HỌC SINH MÔN HỌC
-	HỌC SINH CẢ NĂM
-	LỚP HỌC HỌC KỲ
+	NGƯỜI DÙNG ---------------- ok
+	HỌC SINH MÔN HỌC ---------------- ok
+	HỌC SINH CẢ NĂM ---------------- ok
+	LỚP HỌC HỌC KỲ 
 	LỚP HỌC MÔN HỌC
-	DIEM
+	DIEM  ---------------- ok
 	
 	
 
