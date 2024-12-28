@@ -583,7 +583,60 @@ INSERT INTO QUYDINH VALUES(15, 20, 30, 40, 5)
 --===================================================================================================================================================
 --Trigger  cập nhật số lượng học sinh khi xóa hoặc thêm trong bảng LOP --> VỸ
 	-- khi thêm hoặc xóa cập nhật lại số lượng học sinh
+/*
+	CREATE TRIGGER UPDATE_HOCSINH
+	ON HOCSINH
+	INSTEAD OF INSERT | DELETE
+	AS
+	BEGIN
+		IF EXISTS( SELECT * FROM INSERTED )
+		BEGIN
+			UPDATE LOP
+			SET siso
+		
+		END
 
+	END
+
+
+
+*/ 
+SELECT * FROM LOP
+SELECT * FROM PHANLOP
+SELECT * FROM HOCSINH
+--Trigger  cập nhật số lượng học sinh khi xóa hoặc thêm trong bảng LOP 
+	-- khi thêm hoặc xóa cập nhật lại số lượng học sinh
+DROP TRIGGER IF EXISTS UPDATE_HOCSINH;
+
+EXEC sp_help 'HOCSINH';
+SELECT * FROM LOP
+SELECT * FROM PHANLOP
+SELECT * FROM HOCSINH
+
+
+CREATE TRIGGER UPDATE_HOCSINH
+ON HOCSINH
+AFTER INSERT, DELETE
+AS
+BEGIN
+    -- Cập nhật số lượng học sinh sau khi thêm
+    IF EXISTS (SELECT * FROM inserted)
+    BEGIN
+        UPDATE LOP
+        SET SiSo = (SELECT COUNT(*) FROM PHANLOP PL WHERE MaLop = PL.MaLop)
+        WHERE MaLop IN (SELECT DISTINCT MaLop FROM inserted);
+    END
+
+    -- Cập nhật số lượng học sinh sau khi xóa
+    IF EXISTS (SELECT * FROM deleted)
+    BEGIN
+        UPDATE LOP
+        SET SiSo = (SELECT COUNT(*) FROM HOCSINH WHERE MaLop = LOP.MaLop)
+        WHERE MaLop IN (SELECT DISTINCT MaLop FROM deleted);
+    END
+END;
+
+INSERT INTO HOCSINH VALUES('HS0048', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs048@gmail.com')
 
 --===================================================================================================================================================
 --Trigger cập nhật số điểm học sinh khi chèn vào bảng điểm và tự động cập nhật cho bảng KQ_HOCSINH_MONHOC --> VỸ
