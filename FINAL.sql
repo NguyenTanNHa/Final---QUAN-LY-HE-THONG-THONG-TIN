@@ -287,6 +287,32 @@ Xác định 03 ràng buộc toàn vẹn và viết mã nguồn cài đặt trig
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 BƯỚC 5: xác định ít nhất 6 ràng buộc toàn vẹn và cài đặt trigger
+	Thịnh Trigger tự động cập nhật lại ngày cập nhật 
+			
+	Hoàng Trigger tự động phân loại học sinh
+		
+	Nhã Trigger cập nhật lại trạng thái học lực
+
+	
+	Vỹ 
+		
+
+	
+
+TO BE CONTINOUS .......
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+
+
+
+Task 3: (2.0 point)
+Create 02 stores combined using cursor to browse data to serve any function of the store..
+Tạo 02 store kết hợp sử dụng cursor để duyệt dữ liệu phục vụ cho chức năng bất kỳ của cửa hàng..
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+BƯỚC 6: tạo store procedure
 	Thịnh
 			
 	Hoàng 
@@ -304,14 +330,27 @@ TO BE CONTINOUS .......
 	
 	
 
-
-
-
-Task 3: (2.0 point)
-Create 02 stores combined using cursor to browse data to serve any function of the store..
-Tạo 02 store kết hợp sử dụng cursor để duyệt dữ liệu phục vụ cho chức năng bất kỳ của cửa hàng..
-
 Task 4: (3.0 point)
 Write 02 queries for any business functions and using heuristic algorithm to optimize query.
 Viết 02 truy vấn cho bất kỳ chức năng kinh doanh nào và sử dụng thuật toán heuristic để tối ưu hóa
-*/
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+BƯỚC 7: thuật toán heuristic
+	Thịnh
+			
+	Hoàng 
+		
+	Nhã
+
+	
+	Vỹ 
+		
+
+	
+
+TO BE CONTINOUS .......
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	*/
