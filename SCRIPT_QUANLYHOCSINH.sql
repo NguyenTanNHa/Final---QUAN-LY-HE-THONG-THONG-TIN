@@ -622,7 +622,7 @@ INSERT INTO QUYDINH VALUES(15, 20, 30, 40, 5)
 
 --===================================================================================================================================================
 
--- Trigger cập nhật lại kết quả đậu hoặc rớt cho học sinh  khi có điểm dược thêm vào 
+-- Trigger cập nhật lại kết quả đậu hoặc rớt cho học sinh  khi có điểm dược thêm vào --> VỸ
 	-- bảng KQ_HOCSINH_MONHOC, DIEM
 
 
