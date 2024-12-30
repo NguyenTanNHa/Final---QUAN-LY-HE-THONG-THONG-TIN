@@ -266,7 +266,32 @@ INSERT INTO HOCSINH VALUES('HS0044', N'Đặng Quang Vinh', '0', '01/02/2003', N
 INSERT INTO HOCSINH VALUES('HS0045', N'Âu Ngọc Vũ', '0', '01/02/2003', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs045@gmail.com')
 INSERT INTO HOCSINH VALUES('HS0046', N'Hồ Thanh Vũ', '0', '01/02/2002', N'Bến Tre', 'DT0001', 'TG0002', N'Biết chết liền', 'NN0003', N'Biết chết liền', 'NN0001', 'hs046@gmail.com')
 INSERT INTO HOCSINH VALUES('HS0047', N'Phan Quốc Vương', '0', '04/15/2003', N'Chợ Mới', 'DT0001', 'TG0004', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0005', 'hs047@gmail.com')
-
+INSERT INTO HOCSINH VALUES('HS0048', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs048@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0049', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs059@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0050', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs050@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0051', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs051@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0052', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs052@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0053', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs053@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0054', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs054@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0055', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs055@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0056', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs056@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0057', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs057@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0058', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs058@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0059', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs059@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0060', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs060@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0061', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs061@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0062', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs062@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0063', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs063@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0064', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs064@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0065', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs065@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0066', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs066@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0067', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs067@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0068', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs068@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0069', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs069@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0070', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs070@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0071', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs071@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0072', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs072@gmail.com')
+INSERT INTO HOCSINH VALUES('HS0073', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs073@gmail.com')
 --===================================================================================================================================================
 
 CREATE TABLE LOP
@@ -283,19 +308,19 @@ CREATE TABLE LOP
 	CONSTRAINT FK_LOP_GIAOVIEN FOREIGN KEY(MaGiaoVien) REFERENCES GIAOVIEN(MaGiaoVien)
 )
 
-INSERT INTO LOP VALUES('LOP1011920', '10A1', 'KHOI10', 'NH1920', 35, 'GV0006')
-INSERT INTO LOP VALUES('LOP1021920', '10A2', 'KHOI10', 'NH1920', 36, 'GV0005')
-INSERT INTO LOP VALUES('LOP1031920', '10A3', 'KHOI10', 'NH1920', 34, 'GV0004')
-INSERT INTO LOP VALUES('LOP1111920', '11A1', 'KHOI11', 'NH1920', 37, 'GV0003')
-INSERT INTO LOP VALUES('LOP1121920', '11A2', 'KHOI11', 'NH1920', 38, 'GV0002')
-INSERT INTO LOP VALUES('LOP1211920', '12A1', 'KHOI12', 'NH1920', 39, 'GV0001')
+INSERT INTO LOP VALUES('LOP1011920', '10A1', 'KHOI10', 'NH1920', 35, 'GV0006') /*10 */
+INSERT INTO LOP VALUES('LOP1021920', '10A2', 'KHOI10', 'NH1920', 36, 'GV0005') /*10 */
+INSERT INTO LOP VALUES('LOP1031920', '10A3', 'KHOI10', 'NH1920', 34, 'GV0004') /*0 */
+INSERT INTO LOP VALUES('LOP1111920', '11A1', 'KHOI11', 'NH1920', 37, 'GV0003') /*10 */
+INSERT INTO LOP VALUES('LOP1121920', '11A2', 'KHOI11', 'NH1920', 38, 'GV0002') /*10 */
+INSERT INTO LOP VALUES('LOP1211920', '12A1', 'KHOI12', 'NH1920', 39, 'GV0001') /*7 */
 
-INSERT INTO LOP VALUES('LOP1012021', '10A1', 'KHOI10', 'NH2021', 39, 'GV0001')
-INSERT INTO LOP VALUES('LOP1022021', '10A2', 'KHOI10', 'NH2021', 38, 'GV0002')
-INSERT INTO LOP VALUES('LOP1032021', '10A3', 'KHOI10', 'NH2021', 35, 'GV0003')
-INSERT INTO LOP VALUES('LOP1112021', '11A1', 'KHOI11', 'NH2021', 40, 'GV0004')
-INSERT INTO LOP VALUES('LOP1122021', '11A2', 'KHOI11', 'NH2021', 38, 'GV0005')
-INSERT INTO LOP VALUES('LOP1212021', '12A1', 'KHOI12', 'NH2021', 38, 'GV0006')
+INSERT INTO LOP VALUES('LOP1012021', '10A1', 'KHOI10', 'NH2021', 39, 'GV0001') /*0 */
+INSERT INTO LOP VALUES('LOP1022021', '10A2', 'KHOI10', 'NH2021', 38, 'GV0002') /*0 */
+INSERT INTO LOP VALUES('LOP1032021', '10A3', 'KHOI10', 'NH2021', 35, 'GV0003') /*0 */
+INSERT INTO LOP VALUES('LOP1112021', '11A1', 'KHOI11', 'NH2021', 40, 'GV0004') /*0 */
+INSERT INTO LOP VALUES('LOP1122021', '11A2', 'KHOI11', 'NH2021', 38, 'GV0005') /*0 */
+INSERT INTO LOP VALUES('LOP1212021', '12A1', 'KHOI12', 'NH2021', 38, 'GV0006') /*0 */
 
 --===================================================================================================================================================
 
@@ -511,7 +536,7 @@ CREATE TABLE KQ_HOCSINH_CANAM
 )
 
 INSERT INTO KQ_HOCSINH_CANAM (MaHocSinh,  MaLop, MaNamHoc, MaHocLuc, MaHanhKiem, MaKetQua, DiemTBHK1, DiemTBHK2, DiemTBCN) VALUES 
-('HS0001', 'LOP1212021','NH2021', 'HL0001', 'HK0001', 'KQ001',9,7,10),
+('HS0001', 'LOP1212021','NH2021', 'HL0001', 'HK0001', 'KQ0001',9,7,10),
 ('HS0002', 'LOP1212021','NH2021', 'HL0002', 'HK0001', 'KQ0001',8,7,8),
 ('HS0003', 'LOP1212021','NH2021', 'HL0002', 'HK0001', 'KQ0001',7,7,7),
 ('HS0004', 'LOP1212021','NH2021', 'HL0002', 'HK0001', 'KQ0001',9,8,7),
@@ -583,83 +608,87 @@ INSERT INTO QUYDINH VALUES(15, 20, 30, 40, 5)
 --===================================================================================================================================================
 --Trigger  cập nhật số lượng học sinh khi xóa hoặc thêm trong bảng LOP --> VỸ
 	-- khi thêm hoặc xóa cập nhật lại số lượng học sinh
-/*
-	CREATE TRIGGER UPDATE_HOCSINH
-	ON HOCSINH
-	INSTEAD OF INSERT | DELETE
+	-- DROP TRIGGER IF EXISTS INSERT_OR_DELETE_HOCSINH_FROM_PHANLOP;
+
+	-- EXEC sp_help 'HOCSINH';
+	SELECT * FROM LOP
+	SELECT * FROM PHANLOP
+	SELECT * FROM HOCSINH
+
+	--Bước 1: Tạo Trigger
+	CREATE TRIGGER INSERT_OR_DELETE_HOCSINH_FROM_PHANLOP
+	ON PHANLOP
+	AFTER INSERT, DELETE
 	AS
 	BEGIN
-		IF EXISTS( SELECT * FROM INSERTED )
+		-- Cập nhật số lượng học sinh sau khi thêm
+		IF EXISTS (SELECT * FROM inserted)
 		BEGIN
 			UPDATE LOP
-			SET siso
-		
+			SET SiSo = (SELECT COUNT(*) FROM PHANLOP PL WHERE MaLop = LOP.MaLop)
+			WHERE MaLop IN (SELECT DISTINCT MaLop FROM inserted);
+
 		END
 
-	END
+		-- Cập nhật số lượng học sinh sau khi xóa
+		IF EXISTS (SELECT * FROM deleted)
+		BEGIN
+			UPDATE LOP
+			SET SiSo = (SELECT COUNT(*) FROM PHANLOP PL WHERE MaLop = LOP.MaLop)
+			WHERE MaLop IN (SELECT DISTINCT MaLop FROM deleted);
+		END
+	END;
+	--Bước 2: Chèn hoặc Xóa
+	-- chèn danh sách học sinh mới và cập nhật sỉ số  -> tự động cập nhật sỉ số
+		-- mã học sinh và email là duy nhất
+	INSERT INTO HOCSINH VALUES('HS0053', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs053@gmail.com')
+	INSERT INTO PHANLOP VALUES('NH2021', N'KHOI10', 'LOP1012021', 'HS0051')
 
 
-
-*/ 
-SELECT * FROM LOP
-SELECT * FROM PHANLOP
-SELECT * FROM HOCSINH
---Trigger  cập nhật số lượng học sinh khi xóa hoặc thêm trong bảng LOP 
-	-- khi thêm hoặc xóa cập nhật lại số lượng học sinh
-DROP TRIGGER IF EXISTS UPDATE_HOCSINH;
-
-EXEC sp_help 'HOCSINH';
-SELECT * FROM LOP
-SELECT * FROM PHANLOP
-SELECT * FROM HOCSINH
-
-
-CREATE TRIGGER UPDATE_HOCSINH
-ON HOCSINH
-AFTER INSERT, DELETE
-AS
-BEGIN
-    -- Cập nhật số lượng học sinh sau khi thêm
-    IF EXISTS (SELECT * FROM inserted)
-    BEGIN
-        UPDATE LOP
-        SET SiSo = (SELECT COUNT(*) FROM PHANLOP PL WHERE MaLop = PL.MaLop)
-        WHERE MaLop IN (SELECT DISTINCT MaLop FROM inserted);
-    END
-
-    -- Cập nhật số lượng học sinh sau khi xóa
-    IF EXISTS (SELECT * FROM deleted)
-    BEGIN
-        UPDATE LOP
-        SET SiSo = (SELECT COUNT(*) FROM HOCSINH WHERE MaLop = LOP.MaLop)
-        WHERE MaLop IN (SELECT DISTINCT MaLop FROM deleted);
-    END
-END;
-
-INSERT INTO HOCSINH VALUES('HS0048', N'Trịnh Trần Phương Tuấn', '0', '01/02/2005', N'Long Xuyên', 'DT0001', 'TG0005', N'Biết chết liền', 'NN0005', N'Biết chết liền', 'NN0002', 'hs048@gmail.com')
-
---===================================================================================================================================================
---Trigger cập nhật số điểm học sinh khi chèn vào bảng điểm và tự động cập nhật cho bảng KQ_HOCSINH_MONHOC --> VỸ
+	-- Xóa học sinh ra khỏi lớp học -> tự động cập nhật sỉ số
+	DELETE FROM PHANLOP
+	WHERE MaHocSinh = 'HS0051'
 	
-
 
 
 --===================================================================================================================================================
 --Trigger cập nhật thông tin lớp học LOP VÀ PHAN LOP --> VỸ
 	-- khi thay đổi lớp sẽ cập nhật lại thông tin
+	DROP TRIGGER IF EXISTS UPDATE_HOCSINH;
+		---Bước 1: Tạo Trigger
+	CREATE TRIGGER UPDATE_HOCSINH
+	ON PHANLOP
+	AFTER UPDATE
+	AS
+	BEGIN
+		-- Cập nhật số lượng học sinh sau khi thêm
+		IF EXISTS (SELECT * FROM inserted)
+		BEGIN
+			UPDATE LOP
+			SET SiSo = (SELECT COUNT(*) FROM PHANLOP PL WHERE MaLop = LOP.MaLop)
+			WHERE MaLop IN (SELECT DISTINCT MaLop FROM inserted);
 
+		END
+
+		-- Cập nhật số lượng học sinh sau khi xóa
+		IF EXISTS (SELECT * FROM deleted)
+		BEGIN
+			UPDATE LOP
+			SET SiSo = (SELECT COUNT(*) FROM PHANLOP PL WHERE MaLop = LOP.MaLop)
+			WHERE MaLop IN (SELECT DISTINCT MaLop FROM deleted);
+		END
+	END;
+	-- đưa học sinh vào lớp học
+	-- INSERT INTO PHANLOP VALUES('NH2021', N'KHOI10', 'LOP1012021', 'HS0051')
+	
+	-- thay đổi học sinh mới và cập nhật sỉ số  -> tự động cập nhật sỉ số
+	UPDATE PHANLOP 
+	SET MaNamHoc = 'NH1920' ,
+		MaKhoiLop = 'KHOI10',
+		MaLop = 'LOP1031920'
+	WHERE MaHocSinh = 'HS0051'
 
 --===================================================================================================================================================
---Trigger tính kết quả học tập ---> VỸ
-	-- khi có kết quả mới chèn vào bảng điểm thì tự động tính toán và cập nhật lại bảng 
-	--bảng KQ_HOCSINH_MONHOC
-		-- DIEM
---===================================================================================================================================================
---Trigger tự động tính điểm trung bình của học sinh ---> VỸ
-	-- khi học sinh có điểm mớ được thêm vào tự động tính toán lại điểm tb của học sinh đó 
-		--bảng KQ_HOCSINH_MONHOC
-		-- DIEM
-
 
 
 --===================================================================================================================================================
@@ -667,19 +696,214 @@ INSERT INTO HOCSINH VALUES('HS0048', N'Trịnh Trần Phương Tuấn', '0', '01
 
 -- Trigger tự động phân loại học sinh  ----> HOÀNG
 	-- khi điểm mới được thêm vào tự động phân vào các nhóm học lực khác nhau
+	DROP TRIGGER IF EXISTS TRG_PhanLoaiHocSinh
+
+CREATE OR ALTER TRIGGER TRG_PhanLoaiHocSinh
+ON KQ_HOCSINH_MONHOC
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    UPDATE kqcn
+    SET 
+        
+        MaHocLuc = CASE
+            WHEN i.DiemTBHK >= 8.0 THEN 'HL0001' -- Giỏi
+            WHEN i.DiemTBHK >= 6.5 THEN 'HL0002' -- Khá
+            WHEN i.DiemTBHK >= 5.0 THEN 'HL0003' -- Trung bình
+            WHEN i.DiemTBHK >= 3.5 THEN 'HL0004' -- Yếu
+            ELSE 'HL0005' -- Kém
+        END,
+        
+        MaKetQua = CASE
+            WHEN i.DiemTBHK >= 5.0 THEN 'KQ0001' -- Lên lớp
+            WHEN i.DiemTBHK >= 3.5 THEN 'KQ0002' -- Thi lại
+            WHEN i.DiemTBHK >= 2.0 THEN 'KQ0003' -- Rèn luyện hè
+            ELSE 'KQ0004' -- Ở lại lớp
+        END,
+       
+        DiemTBHK1 = CASE WHEN i.MaHocKy = 'HK1' THEN i.DiemTBHK ELSE kqcn.DiemTBHK1 END,
+        DiemTBHK2 = CASE WHEN i.MaHocKy = 'HK2' THEN i.DiemTBHK ELSE kqcn.DiemTBHK2 END
+    FROM KQ_HOCSINH_CANAM kqcn
+    INNER JOIN inserted i ON kqcn.MaHocSinh = i.MaHocSinh 
+                        AND kqcn.MaNamHoc = i.MaNamHoc
+                        AND kqcn.MaLop = i.MaLop;
+
+    UPDATE KQ_HOCSINH_CANAM
+    SET DiemTBCN = (ISNULL(DiemTBHK1, 0) + ISNULL(DiemTBHK2, 0)) / 
+                   CASE WHEN DiemTBHK1 IS NOT NULL AND DiemTBHK2 IS NOT NULL THEN 2
+                        WHEN DiemTBHK1 IS NULL OR DiemTBHK2 IS NULL THEN 1
+                        ELSE NULL
+                   END
+    WHERE MaHocSinh IN (SELECT MaHocSinh FROM inserted);
+END;
+
+DROP TRIGGER TRG_PhanLoaiHocSinh;
+
+-- Kiểm tra dữ liệu hiện có
+SELECT * FROM KQ_HOCSINH_CANAM;
+
+-- Thêm dữ liệu ban đầu vào KQ_HOCSINH_CANAM
+INSERT INTO KQ_HOCSINH_CANAM 
+(MaHocSinh, MaLop, MaNamHoc, MaHocLuc, MaHanhKiem, MaKetQua, DiemTBHK1, DiemTBHK2, DiemTBCN)
+VALUES 
+('HS0001', 'LOP1212021', 'NH2021', 'HL0001', 'HK0001', 'KQ0001', 0, 0, 0),
+('HS0002', 'LOP1212021', 'NH2021', 'HL0001', 'HK0001', 'KQ0001', 0, 0, 0);
+
+
+-- Cập nhật điểm cho học sinh
+UPDATE KQ_HOCSINH_MONHOC
+SET DiemMiengTB = 9.0,
+    Diem15PhutTB = 8.5,
+    Diem45PhutTB = 8.0,
+    DiemThi = 8.5,
+    DiemTBHK = 8.5
+WHERE MaHocSinh = 'HS0001' 
+AND MaLop = 'LOP1212021'
+AND MaNamHoc = 'NH2021'
+AND MaMonHoc = 'MH0001'
+AND MaHocKy = 'HK1';
+
+-- Kiểm tra kết quả phân loại
+SELECT * FROM KQ_HOCSINH_CANAM 
+WHERE MaHocSinh IN ('HS0001', 'HS0002') 
+AND MaNamHoc = 'NH2021';
 
 
 --===================================================================================================================================================
+SELECT * FROM HOCSINH
+SELECT * FROM LOP
+SELECT * FROM PHANLOP
+DROP TRIGGER IF EXISTS WARNING_QUANTITY_HOCSINH
 
--- Trigger cảnh báo số lượng học sinh vượt quá số lượng giới hạn  ---> VỸ
-	
+-- Trigger cảnh báo số lượng học sinh vượt quá số lượng giới hạn của từng lớp ---> VỸ
+CREATE TRIGGER WARNING_QUANTITY_HOCSINH
+ON PHANLOP
+AFTER INSERT, UPDATE, DELETE
+AS
+BEGIN
+	DECLARE @RULE_QUANTITY INT = 33
+	DECLARE @ExistLop VARCHAR(50);
+
+	IF EXISTS (SELECT * FROM inserted)
+        SET @ExistLop = (SELECT TOP 1 MaLop FROM inserted);
+    ELSE
+        SET @ExistLop = (SELECT TOP 1 MaLop FROM deleted);
+	IF (SELECT COUNT(*) FROM PHANLOP WHERE MaLop = @ExistLop) > @RULE_QUANTITY
+		BEGIN
+			RAISERROR(N'Số lượng học sinh trong lớp %s đã vượt quá giới hạn %d', 16, 1, @ExistLop, @RULE_QUANTITY);
+			ROLLBACK TRANSACTION;
+		END
+	ELSE 
+		BEGIN
+			IF EXISTS (SELECT * FROM inserted)
+			BEGIN
+				UPDATE LOP
+				SET SiSo = (SELECT COUNT(*) FROM PHANLOP WHERE MaLop = @ExistLop)
+				WHERE MaLop IN (SELECT DISTINCT MaLop FROM inserted); 
+			END
+			IF EXISTS (SELECT * FROM deleted)
+			BEGIN
+				UPDATE LOP
+				SET SiSo = (SELECT COUNT(*) FROM PHANLOP WHERE MaLop = @ExistLop)
+				WHERE MaLop IN (SELECT DISTINCT MaLop FROM deleted); 
+			END
+		END
+END
+
+-- PHÂN LỚP
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0048')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0049')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0050')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0051')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0052')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0053')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0054')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0055')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0056')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0057')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0058')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0059')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0060')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0061')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0062')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0063')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0064')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0065')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0066')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0067')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0068')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0069')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0070')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0071')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0072')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1011920', 'HS0073')
+
+-- thêm xóa tự động cập lại sỉ số
+
+-- PHÂN LỚP
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0048')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0049')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0050')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0051')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0052')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0053')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0054')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0055')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0056')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0057')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0058')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0059')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0060')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0061')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0062')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0063')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0064')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0065')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0066')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0068')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0069')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0070')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0071')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0072')
+INSERT INTO PHANLOP VALUES('NH1920', N'KHOI10', 'LOP1021920', 'HS0073')
 
 
+-- Xóa xóa tự động cập lại sỉ số
+DELETE FROM PHANLOP
+WHERE MaKhoiLop ='KHOI10'
+AND MaLop = 'LOP1021920'
+AND MaNamHoc = 'NH1920'
+AND MaHocSinh IN (
+'HS0048', 
+'HS0049', 
+'HS0050', 
+'HS0051', 
+'HS0052', 
+'HS0053',
+'HS0054',
+'HS0055',
+'HS0056',
+'HS0057',
+'HS0058',
+'HS0059',
+'HS0060',
+'HS0061',
+'HS0062',
+'HS0063',
+'HS0064',
+'HS0065',
+'HS0066',
+'HS0067',
+'HS0068',
+'HS0069',
+'HS0070',
+'HS0071',
+'HS0072',
+'HS0073'
+);
 
---===================================================================================================================================================
-
--- Trigger cập nhật lại kết quả đậu hoặc rớt cho học sinh  khi có điểm dược thêm vào --> VỸ
-	-- bảng KQ_HOCSINH_MONHOC, DIEM
 
 
 
@@ -687,12 +911,215 @@ INSERT INTO HOCSINH VALUES('HS0048', N'Trịnh Trần Phương Tuấn', '0', '01
 
 -- Trigger cập nhật lại trạng thái học lực   ---> NHÃ 
 	-- nếu có điểm mới được thêm vào tự động cập nhật lại trạng thái bảng KQ_LOPHOC_HOCKY
+	DROP TRIGGER IF EXISTS TRG_CapNhatHocLuc
+	CREATE TRIGGER TRG_CapNhatHocLuc
+	ON DIEM
+	AFTER INSERT, UPDATE, DELETE
+	AS
+	BEGIN
+		SET NOCOUNT ON;
+		DECLARE @AffectedClasses TABLE (
+        MaLop VARCHAR(10),
+        MaNamHoc VARCHAR(6),
+        MaHocKy VARCHAR(3)
+    );
+
+    
+    INSERT INTO @AffectedClasses
+    SELECT DISTINCT MaLop, MaNamHoc, MaHocKy FROM INSERTED
+    UNION
+    SELECT DISTINCT MaLop, MaNamHoc, MaHocKy FROM DELETED;
+
+    UPDATE kq
+    SET 
+        SoLuongDat = (
+            SELECT COUNT(DISTINCT d.MaHocSinh)
+            FROM DIEM d
+            WHERE d.MaLop = ac.MaLop 
+            AND d.MaNamHoc = ac.MaNamHoc 
+            AND d.MaHocKy = ac.MaHocKy
+            AND d.Diem >= (SELECT TOP 1 DiemDat FROM QUYDINH)
+        ),
+        TiLe = CAST(
+            (SELECT COUNT(DISTINCT d.MaHocSinh) * 100.0
+            FROM DIEM d
+            WHERE d.MaLop = ac.MaLop 
+            AND d.MaNamHoc = ac.MaNamHoc 
+            AND d.MaHocKy = ac.MaHocKy
+            AND d.Diem >= (SELECT TOP 1 DiemDat FROM QUYDINH)) /
+            NULLIF((SELECT SiSo FROM LOP WHERE MaLop = ac.MaLop), 0) AS FLOAT
+        )
+    FROM KQ_LOPHOC_HOCKY kq
+    INNER JOIN @AffectedClasses ac 
+        ON kq.MaLop = ac.MaLop
+        AND kq.MaNamHoc = ac.MaNamHoc
+        AND kq.MaHocKy = ac.MaHocKy;
+END;
+
+DROP TRIGGER TRG_CapNhatHocLuc;
+
+-- Xem dữ liệu hiện tại của KQ_LOPHOC_HOCKY
+SELECT * FROM KQ_LOPHOC_HOCKY WHERE MaLop = 'LOP1212021';
+
+-- Thêm điểm mới
+INSERT INTO DIEM (MaHocSinh, MaMonHoc, MaHocKy, MaNamHoc, MaLop, MaLoai, Diem)
+VALUES ('HS0001', 'MH0001', 'HK1', 'NH2021', 'LOP1212021', 'LD0001', 8.5);
+
+-- Xem kết quả sau khi thêm điểm
+SELECT * FROM KQ_LOPHOC_HOCKY WHERE MaLop = 'LOP1212021';
+
+-- Cập nhật điểm
+UPDATE DIEM 
+SET Diem = 4.5
+WHERE MaHocSinh = 'HS0001' 
+AND MaLop = 'LOP1212021' 
+AND MaHocKy = 'HK1'
+AND MaNamHoc = 'NH2021'
+AND MaMonHoc = 'MH0001';
+
+-- Xem kết quả sau khi cập nhật
+SELECT * FROM KQ_LOPHOC_HOCKY WHERE MaLop = 'LOP1212021';
+
+-- Xóa điểm
+DELETE FROM DIEM 
+WHERE MaHocSinh = 'HS0001' 
+AND MaLop = 'LOP1212021' 
+AND MaHocKy = 'HK1'
+AND MaNamHoc = 'NH2021'
+AND MaMonHoc = 'MH0001';
+
+-- Xem kết quả sau khi xóa
+SELECT * FROM KQ_LOPHOC_HOCKY WHERE MaLop = 'LOP1212021';
+
 
 
 --===================================================================================================================================================
+-- Trigger kiểm tra học sinh trước khi xóa kiểm tra xem học sinh đó có đang tham gia lớp học hay không --> VỸ
 
--- Trigger kiểm tra số lượng học sinh trước khi xóa kiểm tra xem học sinh đó có đang tham gia lớp học hay không --> VỸ
+SELECT * FROM HOCSINH
+SELECT * FROM PHANLOP
+SELECT* FROM LOP
 
+DROP TRIGGER IF EXISTS KIEMTRA_BEFORE_DELETE
+
+CREATE TRIGGER KIEMTRA_BEFORE_DELETE
+ON HOCSINH
+INSTEAD OF DELETE
+AS
+BEGIN
+	 -- Kiểm tra xem có học sinh nào trong bảng deleted
+    IF EXISTS (SELECT * FROM deleted)
+    BEGIN
+        -- Kiểm tra xem học sinh có đang tham gia lớp học không
+        IF EXISTS (
+            SELECT 1 
+            FROM PHANLOP 
+            WHERE MaHocSinh IN (SELECT MaHocSinh FROM deleted)
+        )
+        BEGIN
+            -- Nếu học sinh tham gia lớp, thông báo lỗi
+            RAISERROR('Học sinh này đang tham gia lớp học, không thể xóa!', 16, 1);
+            ROLLBACK TRANSACTION;  -- Hủy giao dịch
+            RETURN;
+        END
+        -- Nếu không có học sinh nào tham gia lớp, thực hiện xóa
+        DELETE FROM HOCSINH WHERE MaHocSinh IN (SELECT MaHocSinh FROM deleted);
+    END
+END
+
+
+
+-- nếu học sinh đâng học thì không thể xóa
+DELETE FROM HOCSINH
+WHERE MaHocSinh = 'HS0049'
+
+
+-- xóa học sinh đang học
+DELETE FROM PHANLOP
+WHERE MaKhoiLop ='KHOI10'
+AND MaLop = 'LOP1011920'
+AND MaNamHoc = 'NH1920'
+AND MaHocSinh IN (
+'HS0048')
+
+
+-- kiểm tra học sinh đang học
+SELECT *  FROM PHANLOP
+WHERE MaKhoiLop ='KHOI10'
+AND MaLop = 'LOP1021920'
+AND MaNamHoc = 'NH1920'
+AND MaHocSinh = 'HS0048'
+--===================================================================================================================================================
+
+-- Trigger cập nhật lại kết quả đậu hoặc rớt cho học sinh  khi có điểm dược thêm vào --> VỸ
+	-- bảng KQ_HOCSINH_CANAM, DIEM
+	-- 
+SELECT * FROM KQ_HOCSINH_CANAM
+SELECT * FROM DIEM
+SELECT * FROM KETQUA
+SELECT * FROM NAMHOC
+SELECT * FROM HOCSINH
+DROP TRIGGER IF EXISTS TinhKetQua_AfterUpdate
+
+CREATE TRIGGER TinhKetQua_AfterUpdate
+ON DIEM
+AFTER UPDATE, INSERT
+AS
+BEGIN
+   DECLARE @MaHocSinh VARCHAR(6);
+    DECLARE @MaLop VARCHAR(10);
+    DECLARE @MaNamHoc VARCHAR(6);
+    DECLARE @DiemTBHK1 FLOAT;
+    DECLARE @DiemTBHK2 FLOAT;
+    DECLARE @MaKetQua VARCHAR(6);
+
+    -- Lấy thông tin học sinh từ bảng inserted
+    SELECT @MaHocSinh = i.MaHocSinh, 
+           @MaLop = i.MaLop, 
+           @MaNamHoc = i.MaNamHoc
+    FROM inserted i;
+
+    -- Tính điểm trung bình của học kỳ 1
+    SELECT @DiemTBHK1 = (SELECT AVG(Diem) 
+                          FROM DIEM 
+                          WHERE MaHocSinh = @MaHocSinh 
+                          AND MaLop = @MaLop 
+                          AND MaNamHoc = @MaNamHoc 
+                          AND MaHocKy = 'HK1');
+
+    -- Tính điểm trung bình của học kỳ 2
+    SELECT @DiemTBHK2 = (SELECT AVG(Diem) 
+                          FROM DIEM 
+                          WHERE MaHocSinh = @MaHocSinh 
+                          AND MaLop = @MaLop 
+                          AND MaNamHoc = @MaNamHoc 
+                          AND MaHocKy = 'HK2');
+
+    -- Tính kết quả
+    SET @MaKetQua = CASE
+        WHEN (@DiemTBHK1 + @DiemTBHK2) / 2.0 < 2 THEN 'KQ0002' -- Thi lại
+        WHEN (@DiemTBHK1 + @DiemTBHK2) / 2.0 < 3.5 THEN 'KQ0003' -- Rèn luyện hè
+        WHEN (@DiemTBHK1 + @DiemTBHK2) / 2.0 < 5 THEN 'KQ0002' -- Thi lại
+        ELSE 'KQ0001' -- Lên lớp
+    END;
+
+    -- Cập nhật kết quả vào bảng KQ_HOCSINH_CANAM
+    UPDATE KQ_HOCSINH_CANAM
+    SET DiemTBHK1 = @DiemTBHK1,
+        DiemTBHK2 = @DiemTBHK2,
+        DiemTBCN = (@DiemTBHK1 + @DiemTBHK2) / 2.0,
+        MaKetQua = @MaKetQua 
+    WHERE MaHocSinh = @MaHocSinh AND MaLop = @MaLop AND MaNamHoc = @MaNamHoc;
+END;
+
+
+-- Thêm dữ liệu vào bảng DIEM
+INSERT INTO DIEM (MaHocSinh, MaMonHoc, MaHocKy, MaNamHoc, MaLop, MaLoai, Diem)
+VALUES
+('HS0047', 'MH0001', 'HK1', 'NH1920', 'LOP1212021', 'LD0001', 9),
+('HS0047', 'MH0001', 'HK2', 'NH1920', 'LOP1212021', 'LD0001', 8),
+('HS0047', 'MH0001', 'HK1', 'NH2021', 'LOP1212021', 'LD0001', 5),
+('HS0047', 'MH0001', 'HK2', 'NH2021', 'LOP1212021', 'LD0001', 6);
 
 
 
@@ -704,11 +1131,22 @@ INSERT INTO HOCSINH VALUES('HS0048', N'Trịnh Trần Phương Tuấn', '0', '01
 
 
 --===================================================================================================================================================
+-- Trigger tự động kiểm tra độ tuổi học sinh kiểm tra độ tuổi có hợp lệ hay không ( nhỏ nhất 15 - lớn nhất 30 )  --> VỸ
+
+
+
+--===================================================================================================================================================
+-- Trigger nếu học sinh đã được phân lớp thì không được phân lần nữa
+
+
+
+
+--===================================================================================================================================================
 
 -- Trigger tự động cập nhật lại ngày cập nhật  --> THỊNH
 	-- bảng HOCSINH -> khi một bản ghi được cập nhật thì ngày cập nhật tự động update  
 
--- Trigger tự động kiểm tra độ tuổi học sinh kiểm tra độ tuổi có hợp lệ hay không ( nhỏ nhất 15 - lớn nhất 30 )  --> VỸ
+
 --===================================================================================================================================================
 ---																STORE PROCEDURE																	---																
 ---																																                ---
