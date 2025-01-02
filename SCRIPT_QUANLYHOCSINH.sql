@@ -608,9 +608,8 @@ INSERT INTO QUYDINH VALUES(15, 20, 30, 40, 5)
 --===================================================================================================================================================
 --Trigger  cập nhật số lượng học sinh khi xóa hoặc thêm trong bảng LOP --> VỸ
 	-- khi thêm hoặc xóa cập nhật lại số lượng học sinh
-	-- DROP TRIGGER IF EXISTS INSERT_OR_DELETE_HOCSINH_FROM_PHANLOP;
+	DROP TRIGGER IF EXISTS INSERT_OR_DELETE_HOCSINH_FROM_PHANLOP;
 
-	-- EXEC sp_help 'HOCSINH';
 	SELECT * FROM LOP
 	SELECT * FROM PHANLOP
 	SELECT * FROM HOCSINH
@@ -696,7 +695,6 @@ INSERT INTO QUYDINH VALUES(15, 20, 30, 40, 5)
 
 -- Trigger tự động phân loại học sinh  ----> HOÀNG
 	-- khi điểm mới được thêm vào tự động phân vào các nhóm học lực khác nhau
-	DROP TRIGGER IF EXISTS TRG_PhanLoaiHocSinh
 
 CREATE OR ALTER TRIGGER TRG_PhanLoaiHocSinh
 ON KQ_HOCSINH_MONHOC
@@ -772,12 +770,14 @@ AND MaNamHoc = 'NH2021';
 
 
 --===================================================================================================================================================
+
+
+-- Trigger cảnh báo số lượng học sinh vượt quá số lượng giới hạn của từng lớp ---> VỸ
 SELECT * FROM HOCSINH
 SELECT * FROM LOP
 SELECT * FROM PHANLOP
 DROP TRIGGER IF EXISTS WARNING_QUANTITY_HOCSINH
 
--- Trigger cảnh báo số lượng học sinh vượt quá số lượng giới hạn của từng lớp ---> VỸ
 CREATE TRIGGER WARNING_QUANTITY_HOCSINH
 ON PHANLOP
 AFTER INSERT, UPDATE, DELETE
@@ -911,7 +911,6 @@ AND MaHocSinh IN (
 
 -- Trigger cập nhật lại trạng thái học lực   ---> NHÃ 
 	-- nếu có điểm mới được thêm vào tự động cập nhật lại trạng thái bảng KQ_LOPHOC_HOCKY
-	DROP TRIGGER IF EXISTS TRG_CapNhatHocLuc
 	CREATE TRIGGER TRG_CapNhatHocLuc
 	ON DIEM
 	AFTER INSERT, UPDATE, DELETE
@@ -1049,95 +1048,6 @@ WHERE MaKhoiLop ='KHOI10'
 AND MaLop = 'LOP1021920'
 AND MaNamHoc = 'NH1920'
 AND MaHocSinh = 'HS0048'
---===================================================================================================================================================
-
--- Trigger cập nhật lại kết quả đậu hoặc rớt cho học sinh  khi có điểm dược thêm vào --> VỸ
-	-- bảng KQ_HOCSINH_CANAM, DIEM
-	-- 
-SELECT * FROM KQ_HOCSINH_CANAM
-SELECT * FROM DIEM
-SELECT * FROM KETQUA
-SELECT * FROM NAMHOC
-SELECT * FROM HOCSINH
-DROP TRIGGER IF EXISTS TinhKetQua_AfterUpdate
-
-CREATE TRIGGER TinhKetQua_AfterUpdate
-ON DIEM
-AFTER UPDATE, INSERT
-AS
-BEGIN
-   DECLARE @MaHocSinh VARCHAR(6);
-    DECLARE @MaLop VARCHAR(10);
-    DECLARE @MaNamHoc VARCHAR(6);
-    DECLARE @DiemTBHK1 FLOAT;
-    DECLARE @DiemTBHK2 FLOAT;
-    DECLARE @MaKetQua VARCHAR(6);
-
-    -- Lấy thông tin học sinh từ bảng inserted
-    SELECT @MaHocSinh = i.MaHocSinh, 
-           @MaLop = i.MaLop, 
-           @MaNamHoc = i.MaNamHoc
-    FROM inserted i;
-
-    -- Tính điểm trung bình của học kỳ 1
-    SELECT @DiemTBHK1 = (SELECT AVG(Diem) 
-                          FROM DIEM 
-                          WHERE MaHocSinh = @MaHocSinh 
-                          AND MaLop = @MaLop 
-                          AND MaNamHoc = @MaNamHoc 
-                          AND MaHocKy = 'HK1');
-
-    -- Tính điểm trung bình của học kỳ 2
-    SELECT @DiemTBHK2 = (SELECT AVG(Diem) 
-                          FROM DIEM 
-                          WHERE MaHocSinh = @MaHocSinh 
-                          AND MaLop = @MaLop 
-                          AND MaNamHoc = @MaNamHoc 
-                          AND MaHocKy = 'HK2');
-
-    -- Tính kết quả
-    SET @MaKetQua = CASE
-        WHEN (@DiemTBHK1 + @DiemTBHK2) / 2.0 < 2 THEN 'KQ0002' -- Thi lại
-        WHEN (@DiemTBHK1 + @DiemTBHK2) / 2.0 < 3.5 THEN 'KQ0003' -- Rèn luyện hè
-        WHEN (@DiemTBHK1 + @DiemTBHK2) / 2.0 < 5 THEN 'KQ0002' -- Thi lại
-        ELSE 'KQ0001' -- Lên lớp
-    END;
-
-    -- Cập nhật kết quả vào bảng KQ_HOCSINH_CANAM
-    UPDATE KQ_HOCSINH_CANAM
-    SET DiemTBHK1 = @DiemTBHK1,
-        DiemTBHK2 = @DiemTBHK2,
-        DiemTBCN = (@DiemTBHK1 + @DiemTBHK2) / 2.0,
-        MaKetQua = @MaKetQua 
-    WHERE MaHocSinh = @MaHocSinh AND MaLop = @MaLop AND MaNamHoc = @MaNamHoc;
-END;
-
-
--- Thêm dữ liệu vào bảng DIEM
-INSERT INTO DIEM (MaHocSinh, MaMonHoc, MaHocKy, MaNamHoc, MaLop, MaLoai, Diem)
-VALUES
-('HS0047', 'MH0001', 'HK1', 'NH1920', 'LOP1212021', 'LD0001', 9),
-('HS0047', 'MH0001', 'HK2', 'NH1920', 'LOP1212021', 'LD0001', 8),
-('HS0047', 'MH0001', 'HK1', 'NH2021', 'LOP1212021', 'LD0001', 5),
-('HS0047', 'MH0001', 'HK2', 'NH2021', 'LOP1212021', 'LD0001', 6);
-
-
-
---===================================================================================================================================================
-
--- Trigger tự động cập nhật lại thông kết kết quả học tập cuối năm   --> VỸ
-	-- bảng KQ_HOCSINH_CANAM
-
-
-
---===================================================================================================================================================
--- Trigger tự động kiểm tra độ tuổi học sinh kiểm tra độ tuổi có hợp lệ hay không ( nhỏ nhất 15 - lớn nhất 30 )  --> VỸ
-
-
-
---===================================================================================================================================================
--- Trigger nếu học sinh đã được phân lớp thì không được phân lần nữa
-
 
 
 
@@ -1149,38 +1059,211 @@ VALUES
 
 --===================================================================================================================================================
 ---																STORE PROCEDURE																	---																
----																																                ---
---===================================================================================================================================================
---- Stored Procedure Tính Tổng Điểm Mỗi Môn Học
----  này sẽ tính tổng điểm cho mỗi môn học và lưu vào bảng KQ_HOCSINH_MONHOC.
-
---===================================================================================================================================================
---- Stored Procedure Cập nhật thông tin học sinh
---- duyệt qua bảng HOCSINH và cập nhật lại bảng học sinh 
-
---===================================================================================================================================================
---- Stored Procedure Cập nhật thông tin lớp học
---- cập nhật lại sỉ số dựa vào bảng HOCSINH 
-
-
-
 --===================================================================================================================================================
 
---- Stored Procedure Cập nhật điểm cao nhất ở mỗi môn học
----tính điểm cao nhất cho mỗi môn và cập nhật vào bảng MONHOC.
 
 
 
 
 --===================================================================================================================================================
 
---- Stored Procedure Cập nhật điểm cao nhất ở mỗi môn học
----tính điểm cao nhất cho mỗi môn và cập nhật vào bảng MONHOC.
+-- store procedure cập nhật lại kết quả đậu hoặc rớt cho học sinh  khi có điểm dược thêm vào --> VỸ
+	-- bảng KQ_HOCSINH_CANAM, DIEM
+	-- 
 
+/*
+// CÓ BAO NHIÊU MÔN HỌC = 9 MÔN 
+					= TBHK1 = TỔNG 9 MÔN / SÓ MÔN HỌC
+							= ((MÔN 1 * HỆ SỐ) + (MÔN 2 * HỆ SỐ) + (MÔN n * HỆ SỐ) / 9
+			
+	KQ_HOCSINH_MONHOC
+		DiemMiengTB
+		Diem15P
+		Diem45P
+		DiemThi ---> CỦA MÔN HỌC
+		DiemTBHK --> CỦA MÔN HỌC
+
+	KQ_HOCSINH_CANAM
+		DIEMTBHK1 -> CỦA TOÀN BỘ MÔN HỌC TRONG HK
+
+*/
+SELECT * FROM KQ_HOCSINH_CANAM
+SELECT * FROM DIEM
+SELECT * FROM KETQUA
+SELECT * FROM NAMHOC
+SELECT * FROM HOCSINH
+SELECT * FROM MONHOC
+SELECT * FROM KQ_HOCSINH_MONHOC
+
+CREATE PROCEDURE CapNhatKetQuaHocSinh
+    @MaHocSinh VARCHAR(6),
+    @MaLop VARCHAR(10),
+    @MaNamHoc VARCHAR(6)
+AS
+BEGIN
+    DECLARE @DiemTBHK1 FLOAT;
+    DECLARE @DiemTBHK2 FLOAT;
+    DECLARE @MaKetQua VARCHAR(6);
+
+    -- Tính điểm trung bình học kỳ 1
+    SELECT @DiemTBHK1 = (SELECT AVG(Diem) 
+                          FROM DIEM 
+                          WHERE MaHocSinh = @MaHocSinh 
+                          AND MaLop = @MaLop 
+                          AND MaNamHoc = @MaNamHoc 
+                          AND MaHocKy = 'HK1');
+
+    -- Tính điểm trung bình học kỳ 2
+    SELECT @DiemTBHK2 = (SELECT AVG(Diem) 
+                          FROM DIEM 
+                          WHERE MaHocSinh = @MaHocSinh 
+                          AND MaLop = @MaLop 
+                          AND MaNamHoc = @MaNamHoc 
+                          AND MaHocKy = 'HK2');
+
+    -- Xác định mã kết quả
+    SET @MaKetQua = CASE
+        WHEN (@DiemTBHK1 + @DiemTBHK2) / 2.0 < 2 THEN 'KQ0004'
+        WHEN (@DiemTBHK1 + @DiemTBHK2) / 2.0 >= 2 AND (@DiemTBHK1 + @DiemTBHK2) / 2.0 < 3.5 THEN 'KQ0003'
+        WHEN (@DiemTBHK1 + @DiemTBHK2) / 2.0 >= 3.5 AND (@DiemTBHK1 + @DiemTBHK2) / 2.0 < 5 THEN 'KQ0002'
+        ELSE 'KQ0001'
+    END;
+
+    -- Kiểm tra xem có bản ghi nào để cập nhật không
+    IF EXISTS (SELECT 1 FROM KQ_HOCSINH_CANAM 
+               WHERE MaHocSinh = @MaHocSinh 
+               AND MaLop = @MaLop 
+               AND MaNamHoc = @MaNamHoc)
+    BEGIN
+        UPDATE KQ_HOCSINH_CANAM
+        SET DiemTBHK1 = @DiemTBHK1,
+            DiemTBHK2 = @DiemTBHK2,
+            DiemTBCN = (@DiemTBHK1 + @DiemTBHK2) / 2.0,
+            MaKetQua = @MaKetQua 
+        WHERE MaHocSinh = @MaHocSinh AND MaLop = @MaLop AND MaNamHoc = @MaNamHoc;
+
+        PRINT 'Updated: ' + @MaHocSinh + ', ' + @MaLop + ', ' + @MaNamHoc + 
+              ', DiemTBHK1: ' + CAST(@DiemTBHK1 AS VARCHAR) +
+              ', DiemTBHK2: ' + CAST(@DiemTBHK2 AS VARCHAR) +
+              ', MaKetQua: ' + @MaKetQua;
+    END
+    ELSE
+    BEGIN
+        PRINT 'No matching record found for: ' + @MaHocSinh + ', ' + @MaLop + ', ' + @MaNamHoc;
+    END
+END;
+EXEC CapNhatKetQuaHocSinh @MaHocSinh = 'HS0047', @MaLop = 'LOP1212021', @MaNamHoc = 'NH1920';
 
 --===================================================================================================================================================
+-- store procedure tự động kiểm tra độ tuổi học sinh kiểm tra độ tuổi có hợp lệ hay không ( nhỏ nhất 15 - lớn nhất 30 )  --> VỸ
+CREATE PROCEDURE KiemTraDoTuoiHocSinh
+AS
+BEGIN
+    DECLARE @MaHocSinh VARCHAR(6);
+    DECLARE @Tuoi INT;
+    DECLARE @NgaySinh DATE;
 
+    DECLARE cur CURSOR FOR 
+    SELECT MaHocSinh, NgaySinh FROM HOCSINH;
+
+    OPEN cur;
+    FETCH NEXT FROM cur INTO @MaHocSinh, @NgaySinh;
+
+    WHILE @@FETCH_STATUS = 0
+    BEGIN
+        -- Tính tuổi
+        SET @Tuoi = DATEDIFF(YEAR, @NgaySinh, GETDATE());
+
+        -- Kiểm tra độ tuổi hợp lệ
+        IF @Tuoi < 6 OR @Tuoi > 18
+        BEGIN
+            PRINT 'Học sinh ' + @MaHocSinh + ' có độ tuổi không hợp lệ: ' + CAST(@Tuoi AS VARCHAR);
+            -- Cập nhật trạng thái (nếu cần)
+            UPDATE HOCSINH
+            SET TinhTrang = 'KhongHopLe'
+            WHERE MaHocSinh = @MaHocSinh;
+        END
+        ELSE
+        BEGIN
+            PRINT 'Học sinh ' + @MaHocSinh + ' có độ tuổi hợp lệ: ' + CAST(@Tuoi AS VARCHAR);
+        END
+
+        FETCH NEXT FROM cur INTO @MaHocSinh, @NgaySinh;
+    END;
+
+    CLOSE cur;
+    DEALLOCATE cur;
+END;
+--===================================================================================================================================================
+-- Store procedure nếu học sinh đã được phân lớp thì không được phân lần nữa
+
+-- GỠ NẾU KHÔNG CẦN THIẾT 
+DROP TRIGGER IF EXISTS PhanLopHocSinh
+
+--HOCSINH: Chứa thông tin học sinh.
+--PHANLOP: Chứa thông tin phân lớp.
+--LOP: Chứa thông tin lớp học.
+SELECT * FROM HOCSINH
+SELECT * FROM PHANLOP
+SELECT * FROM LOP
+
+CREATE PROCEDURE PhanLopHocSinh 
+    @MaHocSinh NVARCHAR(50),
+    @MaLop NVARCHAR(50)
+AS
+BEGIN
+    -- Kiểm tra xem học sinh đã được phân lớp hay chưa
+    IF EXISTS (SELECT 1 FROM PHANLOP WHERE MaHocSinh = @MaHocSinh)
+    BEGIN
+        PRINT N'Học sinh đã được phân lớp. Không thể phân lớp lần nữa.'
+        RETURN
+    END
+
+    -- Nếu chưa phân lớp, thực hiện phân lớp
+    INSERT INTO PHANLOP (MaHocSinh, MaLop)
+    VALUES (@MaHocSinh, @MaLop)
+
+    PRINT N'Phân lớp thành công.'
+END
+
+
+
+
+--- THỰC THI CÂU LỆNH 
+
+EXEC PhanLopHocSinh @MaHocSinh = 'HS0001', @MaLop = 'LOP1021920'
+
+
+--- THỰC HIỆN LOẠI RA KHỎI LỚP
+
+UPDATE PHANLOP
+SET MaLop = ''
+WHERE MaHocSinh = 'HS0001'
+
+--- CHỈNH SỬA KHÓA NGOẠI CHO PHÉP NULL
+-- BƯỚC 1 XÓA STORE ĐANG ẢNH HƯỞNG TRƯỚC
+ALTER TABLE PHANLOP
+DROP CONSTRAINT FK_PhanLop_HocSinh;
+-- Kiểm tra cấu trúc bảng HOCSINH
+EXEC sp_help 'HOCSINH';
+
+-- Kiểm tra cấu trúc bảng PHANLOP
+EXEC sp_help 'PHANLOP';
+
+--  THỰC HIỆN SET
+ALTER TABLE PHANLOP
+ADD CONSTRAINT FK_PhanLop_HocSinh
+FOREIGN KEY (MaHocSinh) REFERENCES HOCSINH(MaHocSinh) 
+ON DELETE SET NULL;
+
+--===================================================================================================================================================
 ---Stored Procedure Xóa Học Sinh Theo Điều Kiện
+
+
+
+
+--===================================================================================================================================================
+
 ---Stored procedure này sẽ xóa học sinh không còn tham gia học.
 
 
@@ -1190,36 +1273,123 @@ VALUES
 ---																																                  ---
 --===================================================================================================================================================
 
---- Tìm kiếm thông tin học sinh theo tên 
-
-
---===================================================================================================================================================
-
--- Lấy Danh Sách Môn Học Với Điểm Trung Bình
-
-
-
---===================================================================================================================================================
-
--- Tính Điểm Cao Nhất Của Từng Học Sinh
-
 
 
 --===================================================================================================================================================
 
 -- Tìm Kiếm Giáo Viên Theo Môn Học
 
+--Bảng PHANCONG: Chứa thông tin về việc phân công giáo viên giảng dạy các môn học.
+--Bảng GIAOVIEN: Chứa thông tin chi tiết về các giáo viên.
+SELECT p.STT,g.TenGiaoVien, g.DiaChi, g.DienThoai, p.MaGiaoVien
+FROM PHANCONG p
+INNER JOIN GIAOVIEN g ON p.MaGiaoVien = g.MaGiaoVien
+WHERE p.MaMonHoc = 'MH0002' 
+ORDER BY g.TenGiaoVien;
+
+----------------- CÂU TỐI ƯU ----------------- 
+SELECT 
+	B.STT AS 'SỐ THỨ TỰ',
+	A.MaGiaoVien AS 'MÃ GIÁO VIÊN',
+	B.MaLop as 'MÃ LỚP',
+	A.TenGiaoVien AS 'TÊN GIÁO VIÊN',
+	A.DiaChi AS 'ĐỊA CHỈ',
+	A.DienThoai AS 'ĐIỆN THOẠI'
+FROM 
+	(SELECT g.MaGiaoVien, g.TenGiaoVien, g.DiaChi, g.DienThoai FROM GIAOVIEN g) A
+	JOIN
+	(SELECT p.MaGiaoVien, p.STT, p.MaMonHoc, p.MaLop FROM PHANCONG p) B
+	ON A.MaGiaoVien = B.MaGiaoVien
+WHERE B.MaMonHoc =  'MH0001'
 
 
 --===================================================================================================================================================
 
  --Tìm Học Sinh Có Điểm Trung Bình Thấp Nhất
 
---===================================================================================================================================================
+SELECT 
+	hs.MaHocSinh AS 'MÃ HỌC SINH',
+	hs.HOTEN AS 'TÊN HỌC SINH',
+	dcn.DiemTBCN AS 'ĐIỂM TRUNG BÌNH'
+FROM HOCSINH hs
+INNER JOIN KQ_HOCSINH_CANAM dcn ON dcn.MaHocSinh = hs.MaHocSinh
+WHERE DiemTBCN = (SELECT MIN(dcn.DiemTBCN) FROM KQ_HOCSINH_CANAM dcn)
 
 
- --- Lấy Thông Tin Giáo Viên Dạy Môn Học Cụ Thể
+/*
+Kiểm tra tính chính sát
+
+Bước 1: update hs có điểm thành 2
+UPDATE KQ_HOCSINH_CANAM
+SET DiemTBCN = 2
+WHERE MaHocSinh = 'HS0003'
+
+*/
+----------------- CÂU TỐI ƯU ----------------- 
+SELECT 
+	TOP 1
+	A.MaHocSinh AS 'MÃ HỌC SINH',
+	A.HOTEN AS 'TÊN HỌC SINH',
+	MIN(B.DiemTBCN) AS 'ĐIỂM TRUNG BÌNH'
+FROM 
+	(SELECT hs.MaHocSinh, hs.HoTen FROM HOCSINH hs) A
+	JOIN
+	(SELECT dcn.MaHocSinh, dcn.DiemTBCN FROM KQ_HOCSINH_CANAM dcn) B
+	ON A.MaHocSinh = B.MaHocSinh
+GROUP BY A.MaHocSinh, A.HoTen, B.DiemTBCN
+ORDER BY B.DiemTBCN ASC
+
 
 --===================================================================================================================================================
 
  --- Tính Tổng Điểm Của Học Sinh Trong Mỗi Khóa Học
+
+SELECT 
+	hs.MaHocSinh as 'Mã Học Sinh',
+	d.MaMonHoc as 'Mã Môn Học',
+	hs.HoTen as 'Tên Học Sinh',
+	SUM(d.Diem) as 'TỔNG ĐIỂM'
+FROM HOCSINH hs
+INNER JOIN DIEM d ON d.MaHocSinh = hs.MaHocSinh
+WHERE hs.MaHocSinh = 'HS0001'
+GROUP BY hs.MaHocSinh, d.MaMonHoc, hs.HoTen 
+----------------- CÂU TỐI ƯU ----------------- 
+SELECT 
+	A.MaHocSinh as 'Mã Học Sinh',
+	A.MaMonHoc as 'Mã Môn Học',
+	B.HoTen as 'Tên Học Sinh',
+	SUM(A.Diem) as 'TỔNG ĐIỂM'
+FROM 
+	(SELECT d.MaHocSinh, d.MaMonHoc, d.Diem FROM DIEM d)  A
+	JOIN
+	(SELECT hs.MaHocSinh, hs.HoTen FROM HOCSINH hs)  B  
+	ON A.MaHocSinh = B.MaHocSinh
+GROUP BY A.MaHocSinh, A.MaMonHoc, B.HoTen
+
+--===================================================================================================================================================
+
+-- Tim Điểm Cao Nhất Của Từng Học Sinh
+
+SELECT 
+	hs.MaHocSinh AS 'MÃ HỌC SINH',
+	hs.HoTen AS 'TÊN HỌC SINH',
+	dcn.MaMonHoc AS 'MÃ MÔN HỌC',
+	MAX(dcn.Diem)  AS 'ĐIỂM TRUNG BÌNH'
+FROM HOCSINH hs
+INNER JOIN DIEM dcn ON dcn.MaHocSinh = hs.MaHocSinh
+GROUP BY hs.MaHocSinh, hs.HoTen, dcn.Diem, dcn.MaMonHoc
+
+
+----------------- CÂU TỐI ƯU ----------------- 
+SELECT 
+	B.MaHocSinh AS 'MÃ HỌC SINH',
+	B.HoTen AS 'TÊN HỌC SINH',
+	A.MaMonHoc AS 'MÃ MÔN HỌC',
+	A.Diem AS 'ĐIỂM'
+FROM 
+	(SELECT d.MaHocSinh, d.MaMonHoc, d.Diem FROM DIEM d ) A
+	JOIN 
+	(SELECT hs.MaHocSinh, hs.HoTen FROM HOCSINH hs) B
+	ON A.MaHocSinh = B.MaHocSinh
+GROUP BY B.MaHocSinh, B.HoTen, A.Diem, A.MaMonHoc
+HAVING A.Diem = MAX(A.Diem)
